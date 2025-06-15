@@ -284,7 +284,7 @@ object Main {
     val random = new Random()
     val n = 30
     val input = (1L to n).map(i => {
-      val key = random.nextInt(50)
+      val key = random.nextLong(50)
       new Element[java.lang.Long, String](key, s"val_$key")
     }).toList
 
